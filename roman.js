@@ -10,3 +10,5 @@ let añoActual = new Date().getFullYear();
 let añoCien = añoActual + (100 - parseInt(edad));
 
 console.log(`${nombre}, cumplirás 100 años en el año ${añoCien}.`); console.log("Hola, soy Román y estoy editando el archivo js/roman.js");
+
+// logrado por roman
