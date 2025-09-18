@@ -1,12 +1,11 @@
-// Script sencillo en JavaScript
+const readline = require('readline');
 
-// Mostrar un mensaje en la consola
-console.log("¡Hola! Bienvenido a JavaScript");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-// Pedir el nombre al usuario
-let nombre = prompt("¿Cómo te llamas?");
-
-// Mostrar un saludo personalizado
-alert("Encantado de conocerte, " + nombre + " 😀");
-
-console.log("Hola, soy César y estoy editando el archivo js/cesar.js");
+rl.question("¿Cómo te llamas? ", function(nombre) {
+    console.log(`¡Hola, ${nombre}!`);
+    rl.close();
+});
